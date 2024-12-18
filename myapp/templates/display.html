@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Display of Todo lists
+{% endblock %}
+
+{% block content %}
+  {% if title %}
+    <h3>{{title.id}}. {{title.head}}</h3>
+    <h5>{{title.content}}</h5>
+  {% endif %}
+{% endblock %}

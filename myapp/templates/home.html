@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Headings of Todo lists
+{% endblock %}
+
+{% block content %}
+  {% for t in title %}
+    <h5>{{t.id}}. {{t.head}}</h5>
+  {% endfor %}
+{% endblock %}
